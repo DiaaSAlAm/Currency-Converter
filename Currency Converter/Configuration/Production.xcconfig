@@ -1,0 +1,18 @@
+//
+//  Production.xcconfig
+//  Currency Converter
+//
+//  Created by Diaa SAlAm on 6/29/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Base URL
+ROOT_URL = http:/$()/data.fixer.io/api/
+// Keys
+API_KEY = f81ae62a310717036cdb1f9835369a32
+
+// App Settings
+APP_NAME = Cur-Con
+APP_BUNDLE_ID = Currency-Converter.production
