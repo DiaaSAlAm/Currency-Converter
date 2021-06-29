@@ -23,6 +23,10 @@ class AppTheme {
         ]
         UINavigationBar.appearance().isTranslucent = false
     }
-    
-     
+}
+
+extension UINavigationController {
+    @objc override open var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
