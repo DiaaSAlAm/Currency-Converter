@@ -47,23 +47,24 @@ class CurrencyListPresenter: CurrencyListPresenterProtocol,CurrencyListInteracto
     }
     
     func configureCell(cell: CurrencyListCellViewProtocol, indexPath: IndexPath) {
-        let currencyIndex = returnCurrencyName_RateIndex(indexPath)
+        guard let rate = rates else {return}
+        let currencyIndex = returnCurrencyName_RateIndex(rate, indexPath: indexPath)
         let viewModel = CurrencyListViewModel(currencyName: currencyIndex.0  , currencyRate: currencyIndex.1)
         cell.configureCell(viewModel: viewModel)
     }
     
     func navigateToCurrencyConverter(_ indexPath: IndexPath){
-        let currencyIndex = returnCurrencyName_RateIndex(indexPath)
-        let model = CurrencyListModel(currencySelectedName: currencyIndex.0 , currencySelectedRate: currencyIndex.1, baseCurrencyName: baseCurrency ?? "none")
-        router.navigateToCurrencyConverter(model: model)
+        guard let rate = rates else {return}
+        let currencyIndex = returnCurrencyName_RateIndex(rate, indexPath: indexPath)
+        let currencyListModel = CurrencyListModel(currencySelectedName: currencyIndex.0 , currencySelectedRate: currencyIndex.1, baseCurrencyName: baseCurrency ?? "none")
+        router.navigateToCurrencyConverter(currencyListModel: currencyListModel)
     }
     
-    private func returnCurrencyName_RateIndex(_ indexPath: IndexPath) -> (String, Double) {
-        let devValue = ("none",0.0)
-        guard let startIndex = rates?.startIndex else {return (devValue)}
-        guard let index = rates?.index(startIndex, offsetBy: indexPath.row) else {return (devValue)}
-        guard let currencyName = rates?.keys[index] else {return (devValue)}
-        guard let currencyRate = rates?.values[index] else {return (devValue)}
+    func returnCurrencyName_RateIndex(_ rates: [String: Double], indexPath: IndexPath) -> (String, Double) {
+        let startIndex = rates.startIndex
+        let index = rates.index(startIndex, offsetBy: indexPath.row)
+        let currencyName = rates.keys[index]
+        let currencyRate = rates.values[index]
         return (currencyName,currencyRate)
     }
      

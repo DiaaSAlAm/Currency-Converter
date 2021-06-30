@@ -37,7 +37,7 @@ protocol CurrencyListInteractorOutputProtocol: class { // it's will call when in
 }
 
 protocol CurrencyListRouterProtocol { // Navigation , Alert
-    func navigateToCurrencyConverter(model: CurrencyListModel)
+    func navigateToCurrencyConverter(currencyListModel: CurrencyListModel)
 }
 
 protocol CurrencyListCellViewProtocol { // it's will call when register cell

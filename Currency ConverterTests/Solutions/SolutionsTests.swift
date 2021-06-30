@@ -55,9 +55,7 @@ class SolutionsTests: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
-            viewModel?.iterativeApproach(10) //0.0000618 s
-//            XCTAssertEqual(viewModel?.iterativeFibonacciNumberValue.value.last, 55)
-//            viewModel?.recursiveApproach(9)
+            viewModel?.iterativeApproach(10)
         }
     }
 

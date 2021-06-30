@@ -35,13 +35,13 @@ import UIKit
         }
     }
     
-    @IBInspectable var shadowY: CGFloat = -3 {
+    @IBInspectable var shadowY: CGFloat = 0 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowBlur: CGFloat = 3 {
+    @IBInspectable var shadowBlur: CGFloat = 0 {
         didSet {
             setNeedsLayout()
         }
@@ -53,19 +53,19 @@ import UIKit
         }
     }
     
-    @IBInspectable var startPointY: CGFloat = 0.5 {
+    @IBInspectable var startPointY: CGFloat = 0 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var endPointX: CGFloat = 1 {
+    @IBInspectable var endPointX: CGFloat = 0 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var endPointY: CGFloat = 0.5 {
+    @IBInspectable var endPointY: CGFloat = 0 {
         didSet {
             setNeedsLayout()
         }

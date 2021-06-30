@@ -17,7 +17,6 @@ class CurrencyListVC: UIViewController, CurrencyListViewProtocol {
     var presenter: CurrencyListPresenterProtocol!
     private let cellIdentifier = CellIdentifiers.currencyList
     private let activityView = UIActivityIndicatorView(style: .large)
-    private let fadeView: UIView = UIView()
     private var retryButton: UIButton = UIButton()
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -75,11 +74,6 @@ extension CurrencyListVC {
     
     //MARK: - Start Animating Activity
     private func startAnimatingActivityView() {
-        fadeView.frame = view.frame
-        fadeView.backgroundColor = .white
-        fadeView.alpha = 0.6
-        view.addSubview(fadeView)
-        
         activityView.hidesWhenStopped = true
         activityView.center = view.center
         activityView.startAnimating()
@@ -87,8 +81,7 @@ extension CurrencyListVC {
     }
     
     //MARK: - Stop Animating Activity
-    private func stopAnimatingActivityView() {
-        fadeView.removeFromSuperview()
+    private func stopAnimatingActivityView() { 
         activityView.stopAnimating()
     }
     

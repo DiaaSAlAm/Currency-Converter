@@ -24,8 +24,9 @@ class CurrencyListRouter: CurrencyListRouterProtocol {
         return view
     }
 
-    func navigateToCurrencyConverter(model: CurrencyListModel) {
-        print("navigateToCurrencyConverter", model)
+    func navigateToCurrencyConverter(currencyListModel: CurrencyListModel) {
+        let viewController = CurrencyConverterRouter.createModule(currencyListModel: currencyListModel)
+        self.viewController?.present(viewController, animated: true, completion: nil)
     }
     
 }
