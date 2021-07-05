@@ -19,3 +19,8 @@ Connecting to fixer.io API., the app shows a collection view of Currency that ma
 * Storyboards/Nibs.
 * Auto Layout.
 * URLSession Network part. 
+*  VIPER architecture pattern
+
+IV. Which architecture would you use for the required task below? Why?
+
+- VIPER can be used in conjunction with SwiftUI and Combine to help build apps with a clean architecture that effectively separates the different functions and responsibilities required, such as the user interface, business logic, data storage, and networking. These are then easier to test, maintain and expand.

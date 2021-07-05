@@ -52,7 +52,7 @@
 		ED7BE1D0268BCA7B00641A84 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE1CF268BCA7B00641A84 /* Environment.swift */; };
 		ED7BE1D5268BCDF100641A84 /* ConstatnsToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE1D4268BCDF100641A84 /* ConstatnsToastMessage.swift */; };
 		ED7BE1DA268BD04400641A84 /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE1D9268BD04400641A84 /* CellIdentifiers.swift */; };
-		ED7BE1E0268BD24300641A84 /* ExArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE1DF268BD24300641A84 /* ExArray.swift */; };
+		ED7BE1E0268BD24300641A84 /* ExDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE1DF268BD24300641A84 /* ExDouble.swift */; };
 		ED7BE1E7268BD63C00641A84 /* CurrencyListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE1E5268BD63C00641A84 /* CurrencyListCell.swift */; };
 		ED7BE1E8268BD63C00641A84 /* CurrencyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7BE1E6268BD63C00641A84 /* CurrencyListCell.xib */; };
 		ED7BE1F3268BE94300641A84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE1F2268BE94300641A84 /* CardView.swift */; };
@@ -130,7 +130,7 @@
 		ED7BE1CF268BCA7B00641A84 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		ED7BE1D4268BCDF100641A84 /* ConstatnsToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstatnsToastMessage.swift; sourceTree = "<group>"; };
 		ED7BE1D9268BD04400641A84 /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
-		ED7BE1DF268BD24300641A84 /* ExArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExArray.swift; sourceTree = "<group>"; };
+		ED7BE1DF268BD24300641A84 /* ExDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDouble.swift; sourceTree = "<group>"; };
 		ED7BE1E5268BD63C00641A84 /* CurrencyListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListCell.swift; sourceTree = "<group>"; };
 		ED7BE1E6268BD63C00641A84 /* CurrencyListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListCell.xib; sourceTree = "<group>"; };
 		ED7BE1F2268BE94300641A84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -417,7 +417,7 @@
 		ED7BE1DE268BD23A00641A84 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				ED7BE1DF268BD24300641A84 /* ExArray.swift */,
+				ED7BE1DF268BD24300641A84 /* ExDouble.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -607,7 +607,7 @@
 				ED200006268AB73D0040D584 /* StoryboardInstantiable.swift in Sources */,
 				ED20FF70268A9B0D0040D584 /* SceneDelegate.swift in Sources */,
 				ED7BE18C268BA66A00641A84 /* CurrencyListPresenter.swift in Sources */,
-				ED7BE1E0268BD24300641A84 /* ExArray.swift in Sources */,
+				ED7BE1E0268BD24300641A84 /* ExDouble.swift in Sources */,
 				ED7BE1C6268BC9F200641A84 /* BaseResponse.swift in Sources */,
 				ED20FFFD268AB24E0040D584 /* SolutionsClass.swift in Sources */,
 				ED73E077268CBC750099AB95 /* CurrencyConverterVC.swift in Sources */,
@@ -801,7 +801,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Diaa-Salam-Ibtikar.Currency-Converter";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -820,7 +820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Diaa-Salam-Ibtikar.Currency-Converter";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -981,7 +981,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Diaa-Salam-Ibtikar.Currency-Converter";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1096,7 +1096,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Diaa-Salam-Ibtikar.Currency-Converter";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
